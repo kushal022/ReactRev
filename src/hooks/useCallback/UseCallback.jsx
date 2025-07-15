@@ -1,5 +1,15 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+/*
+Summary: When to Use useCallback
+Use useCallback when:
+
+You're passing functions to memoized components (React.memo)
+
+You want to avoid re-creating functions unnecessarily (e.g. in useEffect, event handlers)
+
+You're optimizing performance-sensitive components
+*/
 
 const UseCallback = () => {
     const navigate = useNavigate()
