@@ -10,6 +10,10 @@ const About = () => {
             <span>counter</span>
             <button onClick={()=>navigate('/hooks/useReducer/1')} >view</button>
         </div>
+        <div>
+            <span>SignUpForm</span>
+            <button onClick={()=>navigate('/hooks/useReducer/2')} >view</button>
+        </div>
     </div>
   )
 }

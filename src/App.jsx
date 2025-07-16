@@ -17,6 +17,7 @@ import LikeCounter from "./hooks/useRef/LikeCounter";
 import { ExpensiveCalc, FilteredProduct, FilterList, Parent } from "./hooks/useMemo/Example";
 import CounterUseReducer from "./hooks/useReducer/counter/CounterUseReducer";
 import About from "./hooks/useReducer/About";
+import FormSignUP from "./hooks/useReducer/formInputHandle/FormSignUP";
 const App = () => {
   return (
     <Routes>
@@ -46,6 +47,7 @@ const App = () => {
       <Route path="/hooks/useRef/7" element={<LikeCounter />} />
       <Route path="/hooks/useReducer" element={<About />} />
       <Route path="/hooks/useReducer/1" element={<CounterUseReducer />} />
+      <Route path="/hooks/useReducer/2" element={<FormSignUP />} />
     </Routes>
   );
 };
