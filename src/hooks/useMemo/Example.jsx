@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 
 //^1.---------- Expensive Calculation --------
 export function ExpensiveCalc() {
@@ -95,7 +95,49 @@ const ListChild = React.memo(({items})=>{
 ^Why useMemo matters here:
 If items is a new array on each render, the List child re-renders.
 With useMemo, the array reference stays stable → React.memo prevents re-rendering.
+*/
 
+//^4.----------  Real-Time Product Search with useMemo()  --------
+
+const PRODUCTS = Array.from(
+    {length:1000},
+    (_,i)=>`Product ${i+1}`
+)
+
+export function FilteredProduct(){
+    const [query, setQuery] = useState('')
+
+    const filterCount = useRef(0)
+
+    const filteredProducts = useMemo(()=>{
+        filterCount.current+=1;
+        console.log('Filtering products')
+        return PRODUCTS.filter(item=>
+            item.toLocaleLowerCase().includes(query.toLocaleLowerCase())
+        )
+    },[query])
+
+    return(
+        <div>
+            <input 
+                placeholder="search.."
+                value={query}
+                onChange={e=>setQuery(e.target.value)}
+                type="text" />
+            <p>Filter function count: {filterCount.current}</p>
+            <p>filtered {filteredProducts.length} out of {PRODUCTS.length}</p>
+            <p>Product List</p>
+            <ul>
+                {
+                    filteredProducts.map(product=>(
+                        <li key={product} >{product}</li>
+                    ))
+                }
+            </ul>
+        </div>
+    )
+}
+/*
 ^When NOT to Use useMemo
 Don’t use it:
 

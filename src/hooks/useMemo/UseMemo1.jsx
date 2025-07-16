@@ -18,6 +18,10 @@ const UseMemo1 = () => {
         <span>3. Memoizing Props for a React.memo Child</span>
         <button onClick={()=>navigate('/hooks/useMemo/3')}>View</button>
       </div>
+      <div>
+        <span>4.  Real-Time Product Search with useMemo()</span>
+        <button onClick={()=>navigate('/hooks/useMemo/4')}>View</button>
+      </div>
     </div>
   )
 }
