@@ -14,6 +14,7 @@ import Greetings from "./hooks/useCallback/greeting/Greeting";
 import { FocusInput, LiveCounter, Modal, Previous, RenderCounter, Timer } from "./hooks/useRef/Example";
 import SmartTextareaLogger from "./projects/textLogger/SmartTextareaLogger";
 import LikeCounter from "./hooks/useRef/LikeCounter";
+import { ExpensiveCalc, FilterList, Parent } from "./hooks/useMemo/Example";
 const App = () => {
   return (
     <Routes>
@@ -29,6 +30,9 @@ const App = () => {
       <Route path="/hooks/useCallback/counter" element={<Counter />} />
       <Route path="/hooks/useCallback/greeting" element={<Greetings />} />
       <Route path="/hooks/useMemo" element={<UseMemo1 />} />
+      <Route path='/hooks/useMemo/1' element={<ExpensiveCalc />} />
+      <Route path='/hooks/useMemo/2' element={<FilterList />} />
+      <Route path='/hooks/useMemo/3' element={<Parent />} />
       <Route path="/hooks/useRef" element={<UseRef />} />
       <Route path="/hooks/useRef/1" element={<FocusInput />} />
       <Route path="/hooks/useRef/2" element={<Timer />} />
