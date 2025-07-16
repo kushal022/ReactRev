@@ -1,6 +1,6 @@
 // import { useCallback, useState } from "react"
 
-// // useCallback() with dependencies
+//^ useCallback() with dependencies
 // const Greetings = ()=>{
 //     const [name, setName] = useState('')
 
@@ -8,13 +8,13 @@
 //         console.log('hello, ',name)
 //     },[name])
 
-//     // const sayHello = useCallback(()=>{
-//     //     console.log('hello, ',name)
-//     // },[])
+//      const sayHello = useCallback(()=>{
+//          console.log('hello, ',name)
+//      },[])
 
-//     // const sayHello = ()=>{
-//     //     console.log('hello, ',name)
-//     // }
+//      const sayHello = ()=>{
+//          console.log('hello, ',name)
+//      }
 
 //     return(
 //         <div>
@@ -29,7 +29,7 @@
 
 // export default Greetings;
 
-// --------------------------- Timer: 
+//^ --------------------------- Timer: 
 // import React, { useState, useEffect, useCallback } from 'react';
 
 // function Timer() {
@@ -50,7 +50,7 @@
 
 // export default Timer
 
-//------------------- Multiple useCallback
+//^------------------- Multiple useCallback
 // import React, { useState, useCallback } from 'react';
 
 // function Calculator() {
@@ -73,7 +73,7 @@
 // export default Calculator
 
 
-//----------------------------------------------------
+//^----------------------------------------------------
 
 import React, { useState, useCallback } from 'react';
 

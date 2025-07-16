@@ -12,6 +12,8 @@ import AppFilterBar from "./hooks/useCallback/filterBar/AppFilterBar";
 import Counter from "./hooks/useCallback/counter/Counter";
 import Greetings from "./hooks/useCallback/greeting/Greeting";
 import { FocusInput, LiveCounter, Modal, Previous, RenderCounter, Timer } from "./hooks/useRef/Example";
+import SmartTextareaLogger from "./projects/textLogger/SmartTextareaLogger";
+import LikeCounter from "./hooks/useRef/LikeCounter";
 const App = () => {
   return (
     <Routes>
@@ -19,6 +21,7 @@ const App = () => {
       {/* --- Projects ----- */}
       <Route path="/todo" element={<Tasks />} />
       <Route path="/tictactoe" element={<Board />} />
+      <Route path='/textLogger' element={<SmartTextareaLogger/>}/>
       {/* --- Hooks ---- */}
       <Route path="/hooks" element={<Hooks />} />
       <Route path="/hooks/useCallback" element={<UseCallback />} />
@@ -33,6 +36,7 @@ const App = () => {
       <Route path="/hooks/useRef/4" element={<LiveCounter />} />
       <Route path="/hooks/useRef/5" element={<Modal />} />
       <Route path="/hooks/useRef/6" element={<RenderCounter />} />
+      <Route path="/hooks/useRef/7" element={<LikeCounter />} />
     </Routes>
   );
 };

@@ -31,6 +31,10 @@ const UseRef = () => {
         <span>Count Component Re-Renders</span>
         <button onClick={()=>navigate('/hooks/useRef/6')}>view</button>
       </div>
+      <div>
+        <span>Like Counter with Throttle Control</span>
+        <button onClick={()=>navigate('/hooks/useRef/7')}>view</button>
+      </div>
     </div>
   )
 }

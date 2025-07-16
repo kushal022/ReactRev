@@ -18,6 +18,10 @@ const Home = () => {
             <span>Tic Tac Toe --- </span>
             <button onClick={()=>navigate('/tictactoe')}>Visit</button>
         </div>
+        <div className="box">
+            <span>SmartTextLogger --- </span>
+            <button onClick={()=>navigate('/textLogger')}>Visit</button>
+        </div>
     </div>
   )
 }
