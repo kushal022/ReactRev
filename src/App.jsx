@@ -15,6 +15,8 @@ import { FocusInput, LiveCounter, Modal, Previous, RenderCounter, Timer } from "
 import SmartTextareaLogger from "./projects/textLogger/SmartTextareaLogger";
 import LikeCounter from "./hooks/useRef/LikeCounter";
 import { ExpensiveCalc, FilteredProduct, FilterList, Parent } from "./hooks/useMemo/Example";
+import CounterUseReducer from "./hooks/useReducer/counter/CounterUseReducer";
+import About from "./hooks/useReducer/About";
 const App = () => {
   return (
     <Routes>
@@ -42,6 +44,8 @@ const App = () => {
       <Route path="/hooks/useRef/5" element={<Modal />} />
       <Route path="/hooks/useRef/6" element={<RenderCounter />} />
       <Route path="/hooks/useRef/7" element={<LikeCounter />} />
+      <Route path="/hooks/useReducer" element={<About />} />
+      <Route path="/hooks/useReducer/1" element={<CounterUseReducer />} />
     </Routes>
   );
 };

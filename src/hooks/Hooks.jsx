@@ -21,6 +21,10 @@ const Hooks = () => {
             <span>useRef()</span>
             <button onClick={()=>navigate('/hooks/useRef')} >view</button>
         </div>
+        <div>
+            <span>useReducer()</span>
+            <button onClick={()=>navigate('/hooks/useReducer')} >view</button>
+        </div>
         {/* <Outlet/> */}
     </div>
   )
