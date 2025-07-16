@@ -18,6 +18,7 @@ import { ExpensiveCalc, FilteredProduct, FilterList, Parent } from "./hooks/useM
 import CounterUseReducer from "./hooks/useReducer/counter/CounterUseReducer";
 import About from "./hooks/useReducer/About";
 import FormSignUP from "./hooks/useReducer/formInputHandle/FormSignUP";
+import Todo from "./hooks/useReducer/todo/Todo";
 const App = () => {
   return (
     <Routes>
@@ -48,6 +49,7 @@ const App = () => {
       <Route path="/hooks/useReducer" element={<About />} />
       <Route path="/hooks/useReducer/1" element={<CounterUseReducer />} />
       <Route path="/hooks/useReducer/2" element={<FormSignUP />} />
+      <Route path="/hooks/useReducer/3" element={<Todo />} />
     </Routes>
   );
 };

@@ -14,6 +14,10 @@ const About = () => {
             <span>SignUpForm</span>
             <button onClick={()=>navigate('/hooks/useReducer/2')} >view</button>
         </div>
+        <div>
+            <span>Todo With useReducer</span>
+            <button onClick={()=>navigate('/hooks/useReducer/3')} >view</button>
+        </div>
     </div>
   )
 }
