@@ -6,7 +6,13 @@ export const CartContext = createContext(null);
 // Create Cart provider:
  const  CartProvider = ({children})=>{
     const [cart, setCart] = useState([])
-    const [btnText, setBtnText] = useState('Add To Cart')
+    const [user, setUser] = useState(null)
+
+    const login = (username)=>{
+        setUser(username)
+    }
+
+    const logout = ()=>setUser(null)
 
     const addToCart = (product)=>{
         // console.log(product)
@@ -20,8 +26,17 @@ export const CartContext = createContext(null);
         setCart(item => item.filter(p=>p.id!==id))
     }
 
+    const values = {
+        cart,
+        addToCart,
+        removeFromCart,
+        user,
+        login,
+        logout
+    }
+
     return(
-        <CartContext.Provider value={{cart,addToCart,removeFromCart}}>
+        <CartContext.Provider value={values}>
             {children}
         </CartContext.Provider>
     )

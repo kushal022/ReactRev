@@ -2,14 +2,18 @@ import React from 'react'
 import CartProvider from './cartContext'
 import Product from './Product'
 import Cart from './Cart'
+import Home from './Home'
+import Profile from './Profile'
 
 const CartApp = () => {
   return (
     <CartProvider>
         <div>
-            <Product/>
+            <Home/>
+            {/* <Product/> */}
             <hr />
-            <Cart/>
+            <Profile/>
+            {/* <Cart/> */}
         </div>
     </CartProvider>
   )
