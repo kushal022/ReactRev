@@ -7,24 +7,30 @@ const Hooks = () => {
   return (
     <div>
     <div><button onClick={()=>navigate('/')} >Home</button></div>
-        <div>
+    <ol>
+        <li>
             <span>useMemo()</span>
             {/* <Link to='useMemo' >view</Link> */}
             <button onClick={()=>navigate('/hooks/useMemo')} >view</button>
-        </div>
-        <div>
+        </li>
+        <li>
             <span>useCallback()</span>
             {/* <Link to='useCallback' >view</Link> */}
             <button onClick={()=>navigate('/hooks/useCallback')} >view</button>
-        </div>
-        <div>
+        </li>
+        <li>
             <span>useRef()</span>
             <button onClick={()=>navigate('/hooks/useRef')} >view</button>
-        </div>
-        <div>
+        </li>
+        <li>
             <span>useReducer()</span>
             <button onClick={()=>navigate('/hooks/useReducer')} >view</button>
-        </div>
+        </li>
+        <li>
+            <span>useContext()</span>
+            <button onClick={()=>navigate('/hooks/useContext')} >view</button>
+        </li>
+    </ol>
         {/* <Outlet/> */}
     </div>
   )

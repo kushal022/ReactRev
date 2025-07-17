@@ -19,6 +19,8 @@ import CounterUseReducer from "./hooks/useReducer/counter/CounterUseReducer";
 import About from "./hooks/useReducer/About";
 import FormSignUP from "./hooks/useReducer/formInputHandle/FormSignUP";
 import Todo from "./hooks/useReducer/todo/Todo";
+import AboutUseContext from "./hooks/useContext/About";
+import ThemeApp from "./hooks/useContext/themeSwitcher/ThemeApp";
 const App = () => {
   return (
     <Routes>
@@ -50,6 +52,10 @@ const App = () => {
       <Route path="/hooks/useReducer/1" element={<CounterUseReducer />} />
       <Route path="/hooks/useReducer/2" element={<FormSignUP />} />
       <Route path="/hooks/useReducer/3" element={<Todo />} />
+      {/* -- useContext-- */}
+      <Route path="/hooks/useContext" element={<AboutUseContext />} />
+      <Route path="/hooks/useContext/1" element={<ThemeApp />} />
+
     </Routes>
   );
 };
