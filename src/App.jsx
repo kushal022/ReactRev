@@ -11,16 +11,29 @@ import FilterBar from "./hooks/useCallback/filterBar/FilterBar";
 import AppFilterBar from "./hooks/useCallback/filterBar/AppFilterBar";
 import Counter from "./hooks/useCallback/counter/Counter";
 import Greetings from "./hooks/useCallback/greeting/Greeting";
-import { FocusInput, LiveCounter, Modal, Previous, RenderCounter, Timer } from "./hooks/useRef/Example";
+import {
+  FocusInput,
+  LiveCounter,
+  Modal,
+  Previous,
+  RenderCounter,
+  Timer,
+} from "./hooks/useRef/Example";
 import SmartTextareaLogger from "./projects/textLogger/SmartTextareaLogger";
 import LikeCounter from "./hooks/useRef/LikeCounter";
-import { ExpensiveCalc, FilteredProduct, FilterList, Parent } from "./hooks/useMemo/Example";
+import {
+  ExpensiveCalc,
+  FilteredProduct,
+  FilterList,
+  Parent,
+} from "./hooks/useMemo/Example";
 import CounterUseReducer from "./hooks/useReducer/counter/CounterUseReducer";
 import About from "./hooks/useReducer/About";
 import FormSignUP from "./hooks/useReducer/formInputHandle/FormSignUP";
 import Todo from "./hooks/useReducer/todo/Todo";
 import AboutUseContext from "./hooks/useContext/About";
 import ThemeApp from "./hooks/useContext/themeSwitcher/ThemeApp";
+import AuthApp from "./hooks/useContext/authStytem/AuthApp";
 const App = () => {
   return (
     <Routes>
@@ -28,18 +41,21 @@ const App = () => {
       {/* --- Projects ----- */}
       <Route path="/todo" element={<Tasks />} />
       <Route path="/tictactoe" element={<Board />} />
-      <Route path='/textLogger' element={<SmartTextareaLogger/>}/>
+      <Route path="/textLogger" element={<SmartTextareaLogger />} />
       {/* --- Hooks ---- */}
       <Route path="/hooks" element={<Hooks />} />
+      {/* -- useCallback-- */}
       <Route path="/hooks/useCallback" element={<UseCallback />} />
       <Route path="/hooks/useCallback/filterBar" element={<AppFilterBar />} />
       <Route path="/hooks/useCallback/counter" element={<Counter />} />
       <Route path="/hooks/useCallback/greeting" element={<Greetings />} />
+      {/* -- useMemo-- */}
       <Route path="/hooks/useMemo" element={<UseMemo1 />} />
-      <Route path='/hooks/useMemo/1' element={<ExpensiveCalc />} />
-      <Route path='/hooks/useMemo/2' element={<FilterList />} />
-      <Route path='/hooks/useMemo/3' element={<Parent />} />
-      <Route path='/hooks/useMemo/4' element={<FilteredProduct />} />
+      <Route path="/hooks/useMemo/1" element={<ExpensiveCalc />} />
+      <Route path="/hooks/useMemo/2" element={<FilterList />} />
+      <Route path="/hooks/useMemo/3" element={<Parent />} />
+      <Route path="/hooks/useMemo/4" element={<FilteredProduct />} />
+      {/* -- useRef-- */}
       <Route path="/hooks/useRef" element={<UseRef />} />
       <Route path="/hooks/useRef/1" element={<FocusInput />} />
       <Route path="/hooks/useRef/2" element={<Timer />} />
@@ -48,6 +64,7 @@ const App = () => {
       <Route path="/hooks/useRef/5" element={<Modal />} />
       <Route path="/hooks/useRef/6" element={<RenderCounter />} />
       <Route path="/hooks/useRef/7" element={<LikeCounter />} />
+      {/* -- useReducer-- */}
       <Route path="/hooks/useReducer" element={<About />} />
       <Route path="/hooks/useReducer/1" element={<CounterUseReducer />} />
       <Route path="/hooks/useReducer/2" element={<FormSignUP />} />
@@ -55,7 +72,7 @@ const App = () => {
       {/* -- useContext-- */}
       <Route path="/hooks/useContext" element={<AboutUseContext />} />
       <Route path="/hooks/useContext/1" element={<ThemeApp />} />
-
+      <Route path="/hooks/useContext/2" element={<AuthApp />} />
     </Routes>
   );
 };
