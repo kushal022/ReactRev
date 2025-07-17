@@ -15,6 +15,10 @@ const AboutUseContext = () => {
           <span>Auth System using useContext</span>
           <button onClick={() => navigate("/hooks/useContext/2")}>View</button>
         </li>
+        <li>
+          <span>Cart using useContext</span>
+          <button onClick={() => navigate("/hooks/useContext/3")}>View</button>
+        </li>
       </ol>
     </div>
   );
