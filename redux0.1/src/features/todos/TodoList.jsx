@@ -24,7 +24,9 @@ const TodoList = () => {
       {todos &&
         todos.map((todo) => (
           <li key={todo.id}>
-            <span style={{ color: todo.isCompleted ? "green" : "" }}>
+            <span style={{ color: todo.isCompleted ? "green" : "",
+              textDecoration: todo.isCompleted ? 'line-through' : 'none'
+             }}>
               {todo.text}
             </span>
             <button onClick={() => handleCheck(todo.id)}>Check</button>
