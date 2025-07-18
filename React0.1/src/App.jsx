@@ -7,7 +7,6 @@ import Hooks from "./hooks/Hooks";
 import UseMemo1 from "./hooks/useMemo/useMemo1";
 import UseCallback from "./hooks/useCallback/UseCallback";
 import UseRef from "./hooks/useRef/UseRef";
-import FilterBar from "./hooks/useCallback/filterBar/FilterBar";
 import AppFilterBar from "./hooks/useCallback/filterBar/AppFilterBar";
 import Counter from "./hooks/useCallback/counter/Counter";
 import Greetings from "./hooks/useCallback/greeting/Greeting";
