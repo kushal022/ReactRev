@@ -8,7 +8,7 @@ const Counter = () => {
     const count = useSelector((state)=>state.counter.value)
     // useDispatch: pass actions/reducer methods to the store
     const dispatch = useDispatch()
-    console.log(count)
+    // console.log(count)
   return (
     <div>
         <h5>Redux Counter</h5>
