@@ -5,12 +5,16 @@ import { useEffect } from 'react';
 import Forecast from './Forecast';
 import './style.css'
 
+
 const AppWeather = () => {
   const [city, setCity] = useState('');
   const [weather, setWeather] = useState('')
   const [coords, setCoords] = useState('')
   const [forecast, setForecast] = useState('')
-  const API_KEY = 'b3d0c6774971b9f7d2daa126773f09da'
+  // const API_KEY = 'b3d0c6774971b9f7d2daa126773f09da'
+  // const API_KEY = process.env.REACT_APP_WEATHER_API_KEY; //^ use for CRA app
+  const API_KEY = import.meta.env.VITE_APP_WEATHER_API_KEY; //^ use for VITE app: this is how import env variables in components
+  // console.log(API_KEY)
 
   //^Get Coordinates: auto
    useEffect(()=>{
