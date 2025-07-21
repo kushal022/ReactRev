@@ -22,6 +22,10 @@ const Home = () => {
             <span>SmartTextLogger --- </span>
             <button onClick={()=>navigate('/textLogger')}>Visit</button>
         </div>
+        <div className="box">
+            <span>Weather --- </span>
+            <button onClick={()=>navigate('/weather')}>Visit</button>
+        </div>
     </div>
   )
 }

@@ -34,6 +34,7 @@ import AboutUseContext from "./hooks/useContext/About";
 import ThemeApp from "./hooks/useContext/themeSwitcher/ThemeApp";
 import AuthApp from "./hooks/useContext/authStytem/AuthApp";
 import CartApp from "./hooks/useContext/cartSystem/CartApp";
+import AppWeather from "./projects/weather/AppWeather";
 const App = () => {
   return (
     <Routes>
@@ -42,6 +43,7 @@ const App = () => {
       <Route path="/todo" element={<Tasks />} />
       <Route path="/tictactoe" element={<Board />} />
       <Route path="/textLogger" element={<SmartTextareaLogger />} />
+      <Route path="/weather" element={<AppWeather />} />
       {/* --- Hooks ---- */}
       <Route path="/hooks" element={<Hooks />} />
       {/* -- useCallback-- */}
