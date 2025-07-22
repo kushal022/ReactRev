@@ -26,6 +26,10 @@ const Home = () => {
             <span>Weather --- </span>
             <button onClick={()=>navigate('/weather')}>Visit</button>
         </div>
+        <div className="box">
+            <span>Lazy Loading --- </span>
+            <button onClick={()=>navigate('/lazyloading')}>Visit</button>
+        </div>
     </div>
   )
 }

@@ -35,6 +35,7 @@ import ThemeApp from "./hooks/useContext/themeSwitcher/ThemeApp";
 import AuthApp from "./hooks/useContext/authStytem/AuthApp";
 import CartApp from "./hooks/useContext/cartSystem/CartApp";
 import AppWeather from "./projects/weather/AppWeather";
+import LazyLoading from "./lazyLoading/LazyLoading";
 const App = () => {
   return (
     <Routes>
@@ -76,6 +77,8 @@ const App = () => {
       <Route path="/hooks/useContext/1" element={<ThemeApp />} />
       <Route path="/hooks/useContext/2" element={<AuthApp />} />
       <Route path="/hooks/useContext/3" element={<CartApp />} />
+      {/* -- Lazy Loading-- */}
+      <Route path="/lazyloading" element={<LazyLoading />} />
     </Routes>
   );
 };
