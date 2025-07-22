@@ -40,6 +40,7 @@ import FormApp from "./hooks/useForm/FormApp";
 import Register from "./hooks/useForm/Register";
 import Login from "./hooks/useForm/Login";
 import Welcome from "./hooks/useForm/Welcome";
+import MemesApp from "./projects/memesGen/MemesApp";
 const App = () => {
   return (
     <Routes>
@@ -49,6 +50,7 @@ const App = () => {
       <Route path="/tictactoe" element={<Board />} />
       <Route path="/textLogger" element={<SmartTextareaLogger />} />
       <Route path="/weather" element={<AppWeather />} />
+      <Route path="/memesGen" element={<MemesApp />} />
       {/* --- Hooks ---- */}
       <Route path="/hooks" element={<Hooks />} />
       {/* -- useCallback-- */}

@@ -11,6 +11,10 @@ const Home = () => {
             <button onClick={()=>navigate('/hooks')}>Visit</button>
         </div>
         <div className="box">
+            <span>Lazy Loading --- </span>
+            <button onClick={()=>navigate('/lazyloading')}>Visit</button>
+        </div>
+        <div className="box">
             <span>Todo --- </span>
             <button onClick={()=>navigate('/todo')}>Visit</button>
         </div>
@@ -27,9 +31,10 @@ const Home = () => {
             <button onClick={()=>navigate('/weather')}>Visit</button>
         </div>
         <div className="box">
-            <span>Lazy Loading --- </span>
-            <button onClick={()=>navigate('/lazyloading')}>Visit</button>
+            <span>Memes Gen --- </span>
+            <button onClick={()=>navigate('/memesGen')}>Visit</button>
         </div>
+        
     </div>
   )
 }
