@@ -36,6 +36,10 @@ import AuthApp from "./hooks/useContext/authStytem/AuthApp";
 import CartApp from "./hooks/useContext/cartSystem/CartApp";
 import AppWeather from "./projects/weather/AppWeather";
 import LazyLoading from "./lazyLoading/LazyLoading";
+import FormApp from "./hooks/useForm/FormApp";
+import Register from "./hooks/useForm/Register";
+import Login from "./hooks/useForm/Login";
+import Welcome from "./hooks/useForm/Welcome";
 const App = () => {
   return (
     <Routes>
@@ -77,6 +81,11 @@ const App = () => {
       <Route path="/hooks/useContext/1" element={<ThemeApp />} />
       <Route path="/hooks/useContext/2" element={<AuthApp />} />
       <Route path="/hooks/useContext/3" element={<CartApp />} />
+      {/* -- useForm-- */}
+      <Route path="/hooks/useForm" element={<FormApp />} />
+      <Route path="/hooks/useForm/register" element={<Register />} />
+      <Route path="/hooks/useForm/login" element={<Login />} />
+      <Route path="/hooks/useForm/welcome" element={<Welcome />} />
       {/* -- Lazy Loading-- */}
       <Route path="/lazyloading" element={<LazyLoading />} />
     </Routes>

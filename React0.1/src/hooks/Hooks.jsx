@@ -30,6 +30,10 @@ const Hooks = () => {
             <span>useContext()</span>
             <button onClick={()=>navigate('/hooks/useContext')} >view</button>
         </li>
+        <li>
+            <span>useForm()</span>
+            <button onClick={()=>navigate('/hooks/useForm')} >view</button>
+        </li>
     </ol>
         {/* <Outlet/> */}
     </div>
