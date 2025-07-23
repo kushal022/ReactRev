@@ -41,6 +41,8 @@ import Register from "./hooks/useForm/Register";
 import Login from "./hooks/useForm/Login";
 import Welcome from "./hooks/useForm/Welcome";
 import MemesApp from "./projects/memesGen/MemesApp";
+import LyricsApp from "./projects/lyricsFinder/LyricsApp";
+import OtpGenApp from "./projects/otpGen/OtpGenApp";
 const App = () => {
   return (
     <Routes>
@@ -51,6 +53,8 @@ const App = () => {
       <Route path="/textLogger" element={<SmartTextareaLogger />} />
       <Route path="/weather" element={<AppWeather />} />
       <Route path="/memesGen" element={<MemesApp />} />
+      <Route path="/lyricsFinder" element={<LyricsApp />} />
+      <Route path="/genOtp" element={<OtpGenApp />} />
       {/* --- Hooks ---- */}
       <Route path="/hooks" element={<Hooks />} />
       {/* -- useCallback-- */}

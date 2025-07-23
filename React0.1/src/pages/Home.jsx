@@ -34,6 +34,14 @@ const Home = () => {
             <span>Memes Gen --- </span>
             <button onClick={()=>navigate('/memesGen')}>Visit</button>
         </div>
+        <div className="box">
+            <span>Lyrics Finder --- </span>
+            <button onClick={()=>navigate('/lyricsFinder')}>Visit</button>
+        </div>
+        <div className="box">
+            <span>Generate OTP --- </span>
+            <button onClick={()=>navigate('/genOtp')}>Visit</button>
+        </div>
         
     </div>
   )
